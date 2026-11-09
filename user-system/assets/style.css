@@ -1,0 +1,54 @@
+/* style.css - custom look on top of Bootstrap 5 */
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--bs-tertiary-bg);
+}
+main { flex: 1; }
+
+.app-navbar {
+    background: linear-gradient(120deg, #4f46e5, #7c3aed);
+    box-shadow: 0 2px 10px rgba(79, 70, 229, .35);
+}
+.navbar-brand { font-weight: 700; letter-spacing: .5px; }
+
+.card {
+    border: 0;
+    border-radius: 14px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .08);
+}
+.card-header { border-top-left-radius: 14px !important; border-top-right-radius: 14px !important; }
+
+.btn-primary {
+    background: linear-gradient(120deg, #4f46e5, #7c3aed);
+    border: 0;
+}
+.btn-primary:hover { filter: brightness(1.1); }
+
+.hero {
+    padding: 4rem 1rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(79,70,229,.12), rgba(124,58,237,.12));
+}
+.feature-icon {
+    width: 56px; height: 56px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 14px;
+    font-size: 1.6rem;
+    color: #fff;
+    background: linear-gradient(120deg, #4f46e5, #7c3aed);
+}
+
+.stat-card .stat-number { font-size: 2rem; font-weight: 700; }
+
+/* password strength bar */
+.strength-bar { height: 6px; border-radius: 4px; background: var(--bs-secondary-bg); overflow: hidden; }
+.strength-bar > div { height: 100%; width: 0; transition: width .25s, background .25s; }
+
+/* show/hide password button */
+.input-group .toggle-pass { cursor: pointer; }
+
+.table > :not(caption) > * > * { vertical-align: middle; }
